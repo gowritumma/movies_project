@@ -1,0 +1,43 @@
+<%= form_with(model: movie, local: true) do |form| %>
+  <% if movie.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
+      <ul>
+      <% movie.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<table summary="Subject form fields">
+  <tr>
+    <th class="field"><%= form.label :name %></th>     
+    <td><%= form.text_field :name, id: :movie_name %></td>
+  </tr>
+  <tr>
+    <th><%= form.label :preview_video_url %></th>
+    <td><%= form.text_field :preview_video_url, id: :movie_preview_video_url %></td>
+  </tr>
+
+  <tr>
+    <th><%= form.label :runtime %></th>
+    <td><%= form.text_field :runtime, id: :movie_runtime %></td>
+  </tr>
+ 
+  <tr>
+    <th><%= form.label :synopsis %></th>
+    <td><%= form.text_field :synopsis, id: :movie_synopsis %></td>
+  </tr>
+ <tr>
+    <th><%= form.label :Genre %></th>
+    <td><%= form.collection_check_boxes :genre_ids, Genre.all, :id, :name do |b| %>
+    <% b.label(class: "checkbox-inline input_checkbox") {b.check_box(class: "checkbox") + b.text } %>
+<% end %>
+    </td>
+  </tr>
+  <tr>
+    <th></th>
+    <td><%= form.submit %></td>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,372 @@
+/* Primary stylesheet */
+/* Colors */
+/* line 15, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 20, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+body {
+  width: 100%;
+  min-width: 980px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: 14px Verdana, Lucida, Arial, Helvetica, sans-serif;
+  color: #332318;
+}
+
+/* line 30, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+p, td, ul, ol, li, dl, dt, dd {
+  font-family: Verdana, Lucida, Arial, Helvetica, sans-serif;
+}
+
+/* line 34, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+img {
+  border: none;
+}
+
+/* line 35, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* line 37, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+table tr th, table tr td {
+  vertical-align: top;
+  text-align: left;
+  padding: 3px;
+}
+
+/* line 42, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+a, a:visited {
+  color: #993120;
+}
+
+/* line 45, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+.clear {
+  clear: both;
+}
+
+/* line 46, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+.center {
+  text-align: center;
+}
+
+/* Structure */
+/* line 49, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#header {
+  height: 4em;
+  padding-top: 1em;
+  text-align: center;
+  background: #993120;
+  color: #FFFFFF;
+}
+/* line 56, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 59, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#main {
+  min-height: 500px;
+  background: #F2DC87;
+}
+
+/* line 64, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#navigation {
+  float: left;
+  width: 180px;
+  min-height: 480px;
+  padding: 10px;
+  background: #94B26F;
+  color: #4C2516;
+}
+
+/* line 73, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#content {
+  padding: 10px;
+}
+
+/* line 75, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#footer {
+  clear: both;
+  height: 2.5em;
+  text-align: right;
+  background: #4C2516 url(/images/footer_gradient.png) repeat-y 0 0;
+  color: #F2DC87;
+}
+/* line 82, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#footer p {
+  margin: 0;
+  padding: 0.5em 1em;
+}
+
+/* Navigation */
+/* line 91, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 95, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#navigation ul li {
+  margin-bottom: 0.5em;
+}
+/* line 98, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#navigation ul ul {
+  margin: 0.5em 0 0 1em;
+  font-size: 0.9em;
+}
+/* line 104, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#navigation a {
+  text-decoration: none;
+  padding: 1px 3px;
+}
+/* line 107, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#navigation a:hover {
+  background: #F2DC87;
+}
+
+/* Content */
+/* line 115, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/primary.css.scss */
+#content h2 {
+  color: #4C2516;
+}
+/* Admin Additional Styles     */
+/* load after primary.css.scss */
+/* Structure */
+/* line 6, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+#content {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/* line 9, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+#content h2 {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 15, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.login form {
+  margin: 100px 250px;
+}
+
+/* line 20, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.menu .identity {
+  text-align: center;
+}
+/* line 21, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.menu ul {
+  margin: 3em 250px;
+  list-style: none;
+}
+/* line 24, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.menu ul li {
+  margin-bottom: 1em;
+}
+
+/* line 28, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+a {
+  text-decoration: none;
+}
+/* line 30, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* large action buttons */
+/* line 34, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+a.action.large {
+  float: right;
+  padding: 2px 5px;
+  margin: 0 0 1em 1em;
+  background: #94B26F;
+  color: #4C2516;
+  border: 1px solid #4C2516;
+  text-decoration: none;
+  font-size: 0.8em;
+  text-align: center;
+}
+/* line 44, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+a.action.large:hover {
+  background: #B6D491;
+}
+
+/* small action buttons */
+/* line 48, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.actions {
+  width: 230px;
+}
+/* line 50, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.actions a.action {
+  float: left;
+  min-width: 3.5em;
+  padding: 1px 2px;
+  margin: 2px 5px;
+  font-size: 0.7em;
+}
+
+/* CRUD */
+/* line 61, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.notice {
+  height: 1.25em;
+  padding: 0.5em;
+  text-align: center;
+  background: #B6D491;
+  color: #4C2516;
+}
+
+/* line 69, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.back-link {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+/* line 74, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.form-buttons {
+  text-align: center;
+  margin: 1em 0;
+}
+
+/* line 80, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.index table {
+  clear: both;
+  width: 100%;
+}
+/* line 83, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.index table tr td {
+  border: 1px solid #666666;
+}
+
+/* line 88, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.show table {
+  clear: both;
+  margin: 0 200px;
+  width: 300px;
+}
+/* line 90, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.show table.wide {
+  width: 600px;
+  margin: 0 50px;
+}
+/* line 91, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.show table tr th {
+  white-space: nowrap;
+  padding-right: 5px;
+}
+/* line 92, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.show table tr td {
+  border: 1px solid #666666;
+}
+
+/* line 96, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.section + .section {
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+  border-top: 1px dotted #666666;
+}
+
+/* status_tag */
+/* line 103, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+span.status {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0.25em auto;
+  padding: 0;
+  border: 1px solid #000000;
+}
+/* line 108, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+span.status.true {
+  background: green;
+  color: green;
+}
+/* line 109, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+span.status.false {
+  background: red;
+  color: red;
+}
+
+/* Errors */
+/* line 114, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.field_with_errors label {
+  color: #AA0000;
+}
+/* line 115, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+.field_with_errors input {
+  border: 1px;
+  solid: red;
+}
+
+/* line 118, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+#error-explanation {
+  width: 400px;
+  padding: 0;
+  margin: 0 auto 1.5em;
+  border: 1px solid #AA0000;
+  background-color: #FFFFFF;
+  font-size: 12px;
+}
+/* line 124, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+#error-explanation h2 {
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 5px 5px 15px;
+  margin: 0;
+  width: 380px;
+  background-color: #AA0000;
+  color: #FFFFFF;
+}
+/* line 131, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+#error-explanation p {
+  color: #333333;
+  margin: 0;
+  padding: 3px 0.5em;
+}
+/* line 135, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+#error-explanation ul {
+  margin-top: 0;
+}
+/* line 136, /Users/gowridamarla/Documents/Gowri/Sites/movies_project/app/assets/stylesheets/admin_additions.css.scss */
+#error-explanation ul li {
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ * require_tree .
+
+
+
+ */
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+
+ */
+
