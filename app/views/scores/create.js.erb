@@ -1,0 +1,8 @@
+console.log("create.js.erb file");
+$('.score-form').html("<%= j render 'form' %>");
+console.log(<%= @score.score %>);
+console.log(<%= @movie.scores.size %>);
+<% if @score.errors.count == 0 %>
+$('#your_score').html(<%= @score.score %>);
+$('#avg_score').html(<%= @movie.scores.average(:score) %>);
+<% end %>

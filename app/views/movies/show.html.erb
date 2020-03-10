@@ -1,0 +1,42 @@
+<p>
+  <strong>Name:</strong>
+  <%= @movie.name %>
+</p>
+
+<p>
+  <strong>Preview video url:</strong>
+  <%= @movie.preview_video_url %>
+</p>
+
+<p>
+  <strong>Runtime:</strong>
+  <%= Time.at(@movie.runtime).utc.strftime("%H:%M:%S") %>
+</p>
+<p>
+  <strong>Avg Score:</strong>
+  <span id="avg_score"><%if (@movie.scores.average(:score)!= nil) %><%= @movie.scores.average(:score) %><% else %> No score yet <% end %>
+  </span></p>
+<p>
+  <strong>Genres:</strong>
+  <% @movie.genres.each do |g| %>
+    <%= g.name %>
+    <% end %><br /> 
+    
+</p>
+<p>
+  <strong>Synopsis:</strong>
+  <%= @movie.synopsis %>
+</p>
+<p> <strong>Your Score : </strong> <span id="your_score"><% if @score.score != nil %><%= @score.score %> <%= link_to 'Delete Score', delete_movie_score_path(@movie, @score) %><% else %> - <% end %>
+</span></p>
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>
+
+<div class="addscore-form">
+    <hr />
+    <h3 class="subtitle is-3">Leave a score</h3>
+  <div class="score-form">
+    <%= render 'scores/form' %>
+  </div>
+
+</div>

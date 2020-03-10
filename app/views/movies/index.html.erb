@@ -1,0 +1,47 @@
+<div class= " index">
+<% if current_user %>
+<%= link_to 'Logout', destroy_user_session_path, method: :delete%> <div id="logged"><% if current_user %>Logged in as : <%= current_user.email %><% end %></div>
+<% else %>
+<%= link_to 'Sign Up', new_user_registration_path %><br/>
+
+<%= link_to 'Sign In', user_session_path %>
+<% end %>
+<h1>Movies</h1>
+
+<%= link_to 'New Movie', new_movie_path,  :class => 'action new'%>
+  <% if @movies == nil || @movies.size == 0 %>
+    <h3> No Movies available in the Directory. </h3>
+    <br>
+  <% else %>
+<table class="listing">
+  <thead class="header">
+    <tr>
+      <th>Name</th>
+      <th>User</th>
+      <th>Preview video url</th>
+      <th>Runtime</th>
+      <th>Avg Score</th>
+      <th>Synopsis</th>
+      <th colspan="3">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td class="center"><%= movie.name %></td>
+        <td class="center"><%= movie.user.email %></td>
+        <td class="center"><%= movie.preview_video_url %></td>
+        <td class="center"><%= Time.at(movie.runtime).utc.strftime("%H:%M:%S")  %></td>
+        <td class="center"><%= movie.scores.average(:score) %></td>
+        <td class="center"><%= movie.synopsis %></td>
+        <td class="action" colspan="3"><%= link_to 'Show', movie %>
+        <%= link_to 'Edit', edit_movie_path(movie) %>
+        <%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br />
+<% end %>

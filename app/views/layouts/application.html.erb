@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MoviesProject</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   
+    <%= stylesheet_link_tag('admin', :media => 'all') %>
+  </head>
+
+  <body>
+
+  
+  <div id="header">
+      <h1>Movies Library</h1>
+  </div>
+  <div id="main">
+    <%= render 'layouts/alerts' %>
+   
+    <div id="content">
+    <%= yield %>
+    </div>
+  </div>
+  <div id="footer">
+    <p id="copyright">@copy; Gowri Damarla</p>
+  </div>
+  </body>
+</html>
